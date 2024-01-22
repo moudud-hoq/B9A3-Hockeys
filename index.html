@@ -23,6 +23,14 @@
         body {
             font-family: 'Manrope', sans-serif;
         }
+
+        .radial-center{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
     </style>
 
 </head>
@@ -31,7 +39,7 @@
     <!-- Important Comment On the project 
     1. linera gradient overlay over any image or background: bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./Images/1.png)] bg-center bg-cover">    
     -->
-    <header class="mg:px-32 pt-12 pb-24">
+    <header class="md:px-32 pt-12 pb-20">
 
         <!-- Navbar Start -->
         <div class="container banner mx-auto navbar bg-base-100">
@@ -79,13 +87,9 @@
             </div>
         </div>
 
-
         <!-- Carousel -->
         <div class="container banner mx-auto">
             <div class="carousel w-full h-[30rem]">
-
-
-
 
                 <!-- slide-1 -->
                 <div id="slide1"
@@ -126,20 +130,67 @@
             </div>
 
             <!-- Slide Card Over Carousel -->
-            <div class="mx-auto bg-[#131318] w-[34rem] h-[8rem] 
+            <!-- <div class="mx-auto bg-[#131318] w-[34rem] h-[8rem] 
             text-green-500 relative top-4
             -translate-y-44 translate-x-80 p-5 rounded-md">
                 <h4 class="text-xl text-white font-bold pb-2">Meet all the heroes from the field</h4>
                 <p class="text-[.9em] opacity-65 text-white">Dit amet consectetur. Condimentum dignissim adipiscing
                     aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-
-            </div>
+            </div> -->
 
         </div>
     </header>
 
     <!-- End Banner -->
-<!-- Not End Navbar Yet -->
+    <!-- Not End Navbar Yet -->
+    <!-- End Header Area -->
+
+    <main class="md:px-32 pt-12 pb-20">
+        <!-- Radial Progress Bar -->
+        <div class=" container mx-auto h-[530px]">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold ">Professional Hockeys Club</h1>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-evenly items-center">
+
+                <div class="radia-one radial-center">
+                    <div class=" radial-progress" style="--value:87; color:#ff4240;" role="progressbar">87%</div>
+                    <div class="text-center">
+                        <h3>Prayer Facility</h3>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+
+                <div class="radial-two radial-center">
+                    <div class="radial-progress" style="--value:95; color:#49D293;" role="progressbar">95%</div>
+                    <div class="text-center">
+                        <h3>Experienced Coach</h3>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+
+                <div class="radial-three radial-center">
+                    <div class="radial-progress" style="--value:90; color:#FFB546;" role="progressbar">90%</div>
+                    <div class="text-center">
+                        <h3>Senior Player</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+
+                <div class="radial-four radial-center">
+                    <div class="radial-progress" style="--value:80; color: #4C8DF1;" role="progressbar">80%</div>
+                    <div class="text-center">
+                        <h3>Training Ground</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
 </body>
 
 </html>
